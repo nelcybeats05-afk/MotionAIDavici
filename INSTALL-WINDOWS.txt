@@ -1,0 +1,21 @@
+MOTION AI BY 29YURO - DAVINCI RESOLVE / FUSION
+
+SCHNELLINSTALLATION (WINDOWS)
+1. GitHub Actions fertig laufen lassen.
+2. Unter Actions > Build MotionAI DaVinci > letzter erfolgreicher Run das Artifact
+   "MotionAI-DaVinci-29YURO-Windows" herunterladen.
+3. ZIP entpacken.
+4. install_windows.bat doppelklicken.
+5. DaVinci Resolve komplett neu starten.
+6. Eine Fusion Composition öffnen und MotionAI_29YURO über das Scripts/Comp-Menü starten.
+
+MANUELL
+Kopiere:
+Scripts\Comp\MotionAI_29YURO.lua
+nach:
+%APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts\Comp\
+
+WICHTIG
+Das Projekt ist ein natives Fusion-Lua-Script, keine .drfx- oder OFX-Binärdatei.
+Die aktuelle Referenzvideo-Funktion speichert das Referenzvideo als Vorlage, führt aber
+keine echte KI-Videoanalyse ohne zusätzlichen AI-Backend-Dienst durch.
