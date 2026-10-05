@@ -1,0 +1,15 @@
+name: Validate MotionAI DaVinci
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required files
+        run: |
+          test -f Scripts/Comp/MotionAI_29YURO.lua
+          test -f README.md
+      - name: Basic Lua structure check
+        run: |
+          grep -q "Motion AI by 29YURO" Scripts/Comp/MotionAI_29YURO.lua
+          grep -q "Fade In" Scripts/Comp/MotionAI_29YURO.lua
